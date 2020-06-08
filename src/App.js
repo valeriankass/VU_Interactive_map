@@ -16,14 +16,6 @@ const mapContainerStyle = {
   marginRight: "auto",
   marginLeft: "auto",
 };
-function zoom() {
-  let width = window.innerWidth;
-  if (width > 768) {
-    return 18
-  } else {
-    return 16
-  }
-}
 const options = {
   styles: mapStyles,
   disableDefaultUI: true,
@@ -59,9 +51,12 @@ export default function App() {
       <div className="mapContainer">
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={zoom()}
+          zoom={window.innerWidth > 768 ? 18 : 16}
           options={options}
           center={center}
+          onClick={() => {
+            setSelectedSpot(null);
+          }}
         >
           {studySpots.features.map((spot) => (
             <Marker
@@ -72,6 +67,10 @@ export default function App() {
               }}
               onClick={() => {
                 setSelectedSpot(spot);
+              }}
+              icon={{
+                url: 'https://image.flaticon.com/icons/svg/2972/2972117.svg',
+                scaledSize: new window.google.maps.Size(35, 35)
               }}
             />
           ))}
