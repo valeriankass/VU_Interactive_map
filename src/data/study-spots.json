@@ -1,0 +1,52 @@
+{
+  "features": [
+    {
+      "properties": {
+        "id": "0",
+        "room": "F229",
+        "floor": "1",
+        "building": "W&N"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.33290060951715, 4.865636342340878]
+      }
+    },
+    {
+      "properties": {
+        "id": "1",
+        "room": "05A24",
+        "floor": "5",
+        "building": "HG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.334477322920904, 4.867476337725094]
+      }
+    },
+    {
+      "properties": {
+        "id": "2",
+        "room": "423",
+        "floor": "4",
+        "building": "NU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.33453632565785, 4.863689058596066]
+      }
+    },
+    {
+      "properties": {
+        "id": "3",
+        "room": "FG2",
+        "floor": "0",
+        "building": "MF"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.332989116748166, 4.86257325964595]
+      }
+    }
+  ]
+}
