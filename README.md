@@ -4,7 +4,12 @@ To see the website visit: [valeriankass.github.io/vu_interactive_map](http://val
 
 master branch has latest deployment of website. production branch has source code.
 
-Before running the server locally, you need to create .env.local file and set your google API key value.
+Before running the server locally, you need:
+- to create .env.local file and set your google API key value.
+- install react-google-maps
+```bash
+npm i -S @react-google-maps/api
+```
 
 To run live version on your machine.
 ```bash
