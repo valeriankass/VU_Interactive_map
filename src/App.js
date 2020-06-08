@@ -16,6 +16,14 @@ const mapContainerStyle = {
   marginRight: "auto",
   marginLeft: "auto",
 };
+function zoom() {
+  let width = window.innerWidth;
+  if (width > 768) {
+    return 18
+  } else {
+    return 16
+  }
+}
 const options = {
   styles: mapStyles,
   disableDefaultUI: true,
@@ -51,7 +59,7 @@ export default function App() {
       <div className="mapContainer">
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={18}
+          zoom={zoom()}
           options={options}
           center={center}
         >
