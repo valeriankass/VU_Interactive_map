@@ -69,7 +69,7 @@ export default function App() {
                 setSelectedSpot(spot);
               }}
               icon={{
-                url: 'https://image.flaticon.com/icons/svg/2972/2972117.svg',
+                url: 'https://image.flaticon.com/icons/svg/2232/2232688.svg',
                 scaledSize: new window.google.maps.Size(35, 35)
               }}
             />
