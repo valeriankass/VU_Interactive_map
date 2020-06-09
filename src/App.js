@@ -20,7 +20,7 @@ const options = {
   styles: mapStyles,
   disableDefaultUI: true,
   zoomControl: true,
-  scrollwheel: false,
+  gestureHandling: "cooperative",
 };
 const center = {
   lat: 52.333642,
