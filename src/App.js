@@ -6,6 +6,7 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 
+import "./App.css"
 import mapStyles from "./mapStyles";
 import * as studySpots from "./data/study-spots.json";
 

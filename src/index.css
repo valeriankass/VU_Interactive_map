@@ -7,28 +7,3 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-h1 {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  color: #281414;
-  z-index: 10;
-  margin: 0;
-  padding: 0;
-}
-
-.mapContainer {
-  overflow-x: hidden;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-}
