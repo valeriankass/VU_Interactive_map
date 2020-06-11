@@ -6,7 +6,7 @@ import arrows from "../../data/image/arrows.png";
 var pageHeight = window.innerHeight;
 
 function scrollDown() {
-  window.scrollTo(0,pageHeight);
+  window.scrollTo({top: pageHeight, behavior: 'smooth'});
 }
 
 export default function Arrows() {
