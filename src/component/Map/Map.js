@@ -6,12 +6,9 @@ import {
   InfoWindow,
 } from "@react-google-maps/api";
 
-import "./App.css"
-import mapStyles from "../data/json/mapStyles";
-import * as studySpots from "../data/json/study-spots.json";
-
-import Arrows from "./Arrows";
-import Filler from "./Filler";
+import "./Map.css"
+import mapStyles from "../../data/json/mapStyles";
+import * as studySpots from "../../data/json/study-spots.json";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -31,7 +28,7 @@ const center = {
   lng: 4.865137,
 };
 
-export default function App() {
+export default function Map() {
   const { isLoaded, loadError } = useLoadScript({
     //Remember to set API restriction to URL after product is ready
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
@@ -104,8 +101,6 @@ export default function App() {
           ) : null}
         </GoogleMap>
       </div>
-      <Arrows />
-      <Filler />
     </div>
   );
 }

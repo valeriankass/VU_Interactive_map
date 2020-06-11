@@ -2,7 +2,7 @@
   position: absolute;
   width: 150px;
   height: 10%;
-  top: 90vh;
+  top: 89vh;
   left: 50vw;
   transform: translateX(-50%); /* adjusts the image to always be in the middle of the page */
   opacity: 0.5;
