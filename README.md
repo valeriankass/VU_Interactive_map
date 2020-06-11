@@ -6,9 +6,9 @@ master branch has latest deployment of website. production branch has source cod
 
 Before running the server locally, you need:
 - to create .env.local file and set your google API key value.
-- install react-google-maps
+- install dependencies
 ```bash
-npm i -S @react-google-maps/api
+npm install
 ```
 
 To run live version on your machine.
