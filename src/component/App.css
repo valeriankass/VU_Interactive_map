@@ -12,27 +12,6 @@ h1 {
   overflow-x: hidden;
 }
 
-.arrows {
-  position: absolute;
-  width: 150px;
-  height: 10%;
-  top: 90vh;
-  left: 50vw;
-  transform: translateX(-50%); /* adjusts the image to always be in the middle of the page */
-  opacity: 0.5;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
-    from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
-  z-index: 10;
-  margin: 0;
-  padding: 0;
-  transition: 0.3s;
-}
-
-.arrows:hover {
-  opacity: 1;
-  transform: translate(-50%, -10%);
-}
-
 @media screen and (max-width: 768px) {
   body {
     font-size: 15px;

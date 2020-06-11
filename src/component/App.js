@@ -9,7 +9,9 @@ import {
 import "./App.css"
 import mapStyles from "../data/json/mapStyles";
 import * as studySpots from "../data/json/study-spots.json";
-import arrows from "../data/image/arrows.png";
+
+import Arrows from "./Arrows";
+import Filler from "./Filler";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -102,11 +104,8 @@ export default function App() {
           ) : null}
         </GoogleMap>
       </div>
-      <img
-        className="arrows"
-        src={arrows}
-        alt="arrows"
-      />
+      <Arrows />
+      <Filler />
     </div>
   );
 }
