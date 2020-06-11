@@ -1,8 +1,11 @@
-## Basic tutorial
+# Basic tutorial
 
 To see the website visit: [valeriankass.github.io/vu_interactive_map](http://valeriankass.github.io/VU_Interactive_map/)
 
 master branch has latest deployment of website. production branch has source code.
+
+
+## Run the app in development mode
 
 Before running the server locally, you need to:
 - create .env.local file and set your REACT_APP_GOOGLE_MAPS_API_KEY value.
@@ -16,9 +19,11 @@ To run live version on your machine.
 npm start
 ```
 
+## Build the app for production and deploy it.
+
 Before deploying you need to install gh-pages.
 ```bash
-npm install -g gh-pages --save-dev
+npm install gh-pages --save-dev
 ```
 
 To deploy changes to github.
