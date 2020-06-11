@@ -27,6 +27,18 @@
     {
       "properties": {
         "id": "2",
+        "room": "02A01",
+        "floor": "5",
+        "building": "HG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.334428, 4.867311]
+      }
+    },
+    {
+      "properties": {
+        "id": "3",
         "room": "423",
         "floor": "4",
         "building": "NU"
@@ -38,7 +50,7 @@
     },
     {
       "properties": {
-        "id": "3",
+        "id": "4",
         "room": "FG2",
         "floor": "0",
         "building": "MF"

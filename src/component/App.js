@@ -7,8 +7,9 @@ import {
 } from "@react-google-maps/api";
 
 import "./App.css"
-import mapStyles from "./mapStyles";
-import * as studySpots from "./data/study-spots.json";
+import mapStyles from "../data/json/mapStyles";
+import * as studySpots from "../data/json/study-spots.json";
+import arrows from "../data/image/arrows.png";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -101,6 +102,11 @@ export default function App() {
           ) : null}
         </GoogleMap>
       </div>
+      <img
+        className="arrows"
+        src={arrows}
+        alt="arrows"
+      />
     </div>
   );
 }
