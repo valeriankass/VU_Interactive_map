@@ -3,9 +3,9 @@
   "name": "VU Study Spots",
   "icons": [
     {
-      "src": "headicon.png",
-      "type": "image/png",
-      "sizes": "225x225"
+      "src": "map.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
