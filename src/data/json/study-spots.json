@@ -10,6 +10,10 @@
       "geometry": {
         "type": "Point",
         "coordinates": [52.33290060951715, 4.865636342340878]
+      },
+      "metadata": {
+        "open_building": false,
+        "open_floor": false
       }
     },
     {
@@ -22,11 +26,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [52.334477322920904, 4.867476337725094]
+      },
+      "metadata": {
+        "open_building": false,
+        "open_floor": false
       }
     },
     {
       "properties": {
         "id": "2",
+        "room": "05A25",
+        "floor": "5",
+        "building": "HG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.334510, 4.867502]
+      },
+      "metadata": {
+        "open_building": false,
+        "open_floor": false
+      }
+    },
+    {
+      "properties": {
+        "id": "3",
         "room": "02A01",
         "floor": "2",
         "building": "HG"
@@ -34,11 +58,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [52.334428, 4.867311]
+      },
+      "metadata": {
+        "open_building": false,
+        "open_floor": false
       }
     },
     {
       "properties": {
-        "id": "3",
+        "id": "4",
         "room": "423",
         "floor": "4",
         "building": "NU"
@@ -46,11 +74,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [52.33453632565785, 4.863689058596066]
+      },
+      "metadata": {
+        "open_building": false,
+        "open_floor": false
       }
     },
     {
       "properties": {
-        "id": "4",
+        "id": "5",
         "room": "FG2",
         "floor": "0",
         "building": "MF"
@@ -58,6 +90,10 @@
       "geometry": {
         "type": "Point",
         "coordinates": [52.332989116748166, 4.86257325964595]
+      },
+      "metadata": {
+        "open_building": false,
+        "open_floor": false
       }
     }
   ]

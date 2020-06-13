@@ -4,6 +4,9 @@ To see the website visit: [valeriankass.github.io/vu_interactive_map](http://val
 
 master branch has latest deployment of website. production branch has source code.
 
+## Install npm
+
+Npm in essential to the way we run our app. Npm is part of Node.js. Download it from [nodejs.org](https://nodejs.org/en/download/)
 
 ## Run the app in development mode
 
