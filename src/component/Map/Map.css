@@ -11,3 +11,21 @@ h1 {
 .mapContainer {
   overflow-x: hidden;
 }
+
+div > p {
+  text-align: center;
+  margin: 5px;
+}
+
+.availSpots {
+  color: rgba(34,139,34, 1);
+}
+
+.notAvail {
+  color: rgba(250,128,114, 1);
+}
+
+.loc {
+  font-weight: bold;
+  font-size: 16px;
+}

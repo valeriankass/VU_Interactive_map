@@ -5,7 +5,9 @@
         "id": "0",
         "room": "G229",
         "floor": "1",
-        "building": "W&N"
+        "building": "W&N",
+        "electricityPlugs": true,
+        "availableSpots": true
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +23,9 @@
         "id": "1",
         "room": "A412",
         "floor": "4",
-        "building": "W&N"
+        "building": "W&N",
+        "electricityPlugs": true,
+        "availableSpots": false
       },
       "geometry": {
         "type": "Point",
@@ -37,7 +41,9 @@
         "id": "2",
         "room": "S412",
         "floor": "6",
-        "building": "W&N"
+        "building": "W&N",
+        "electricityPlugs": false,
+        "availableSpots": false
       },
       "geometry": {
         "type": "Point",
@@ -53,7 +59,9 @@
         "id": "3",
         "room": "P112",
         "floor": "1",
-        "building": "W&N"
+        "building": "W&N",
+        "electricityPlugs": true,
+        "availableSpots": true
       },
       "geometry": {
         "type": "Point",
@@ -69,7 +77,9 @@
         "id": "4",
         "room": "02A01",
         "floor": "2",
-        "building": "HG"
+        "building": "HG",
+        "electricityPlugs": true,
+        "availableSpots": false
       },
       "geometry": {
         "type": "Point",
@@ -85,7 +95,9 @@
         "id": "5",
         "room": "05A24",
         "floor": "5",
-        "building": "HG"
+        "building": "HG",
+        "electricityPlugs": false,
+        "availableSpots": true
       },
       "geometry": {
         "type": "Point",
@@ -101,7 +113,9 @@
         "id": "6",
         "room": "05A25",
         "floor": "5",
-        "building": "HG"
+        "building": "HG",
+        "electricityPlugs": true,
+        "availableSpots": true
       },
       "geometry": {
         "type": "Point",
@@ -117,7 +131,9 @@
         "id": "7",
         "room": "054",
         "floor": "0",
-        "building": "NU"
+        "building": "NU",
+        "electricityPlugs": false,
+        "availableSpots": false
       },
       "geometry": {
         "type": "Point",
@@ -133,7 +149,9 @@
         "id": "8",
         "room": "423",
         "floor": "4",
-        "building": "NU"
+        "building": "NU",
+        "electricityPlugs": false,
+        "availableSpots": true
       },
       "geometry": {
         "type": "Point",
@@ -149,7 +167,9 @@
         "id": "9",
         "room": "FG2",
         "floor": "0",
-        "building": "MF"
+        "building": "MF",
+        "electricityPlugs": true,
+        "availableSpots": false
       },
       "geometry": {
         "type": "Point",

@@ -21,6 +21,22 @@ export default function AccordionHandler() {
     }))
   }
 
+  const availSpotText = spot => {
+    let result = ""
+
+    if (spot.properties.availableSpots) result = "Free Spots!"
+
+    return result
+  }
+
+  const availPowerText = spot => {
+    let result = ""
+
+    if (spot.properties.electricityPlugs) result = "Power Sockets!"
+
+    return result
+  }
+
   //Shortcut used b/c building is not nested
   const buildings = studySpots_State.map(spot => spot.properties.building);
   //In case of Floors we have to remember that two buildings can have the same floor
@@ -72,6 +88,12 @@ export default function AccordionHandler() {
                       key={filteredSpot_room.properties.id}
                     >
                       {"Room: " + filteredSpot_room.properties.room}
+                      <div className={filteredSpot_room.properties.availableSpots ? "availText" : "hide"}>
+                        {availSpotText(filteredSpot_room)}
+                      </div>
+                      <div className={filteredSpot_room.properties.electricityPlugs ? "availText" : "hide"}>
+                        {availPowerText(filteredSpot_room)}
+                      </div>
                     </div>
                   ))
                 }

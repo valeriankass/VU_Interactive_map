@@ -8,3 +8,14 @@ body {
 	margin: 5vh auto 20vh;
 	padding: 15px;
 }
+
+.hide {
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+}
+
+.availText {
+  padding-top: 10px;
+  padding-left: 20px;
+}

@@ -86,14 +86,20 @@ export default function Map() {
               }}
             >
               <div>
-                <p>
+                <p className="loc">
                   Room: {selectedSpot.properties.room}
                 </p>
-                <p>
+                <p className="loc">
                   Floor: {selectedSpot.properties.floor}
                 </p>
-                <p>
+                <p className="loc">
                   Building: {selectedSpot.properties.building}
+                </p>
+                <p className={selectedSpot.properties.availableSpots ? "availSpots" : "notAvail"}>
+                  {selectedSpot.properties.availableSpots ? "Free spots are available!" : "No free spots at the moment."}
+                </p>
+                <p className={selectedSpot.properties.electricityPlugs ? "" : "notAvail"}>
+                  {selectedSpot.properties.electricityPlugs ? "Power sockets are available!" : "There are no power sockets here."}
                 </p>
               </div>
             </InfoWindow>
