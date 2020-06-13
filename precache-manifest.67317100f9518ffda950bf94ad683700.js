@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed5578514de8c3199a432a61028a43c6",
+    "revision": "1445adfafe7db5b939c645d9a958338b",
     "url": "/VU_Interactive_map/index.html"
   },
   {
