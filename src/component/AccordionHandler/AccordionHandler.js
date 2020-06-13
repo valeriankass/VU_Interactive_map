@@ -13,9 +13,6 @@ export default function AccordionHandler() {
         if (type === "building") {
           spot.metadata.open_building = !spot.metadata.open_building
         } else if (type === "floor") {
-          console.log("spot_id: " + spot.properties.id)
-          console.log("index: " + index)
-          console.log(".")
           spot.metadata.open_floor = !spot.metadata.open_floor
         }
       }
