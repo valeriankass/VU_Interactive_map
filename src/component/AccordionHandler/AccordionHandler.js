@@ -13,6 +13,9 @@ export default function AccordionHandler() {
         if (type === "building") {
           spot.metadata.open_building = !spot.metadata.open_building
         } else if (type === "floor") {
+          console.log("spot_id: " + spot.properties.id)
+          console.log("index: " + index)
+          console.log(".")
           spot.metadata.open_floor = !spot.metadata.open_floor
         }
       }
@@ -44,9 +47,9 @@ export default function AccordionHandler() {
             )).map((filteredSpot_floor) => (
               <Accordion //Floor
                 key={filteredSpot_floor.properties.id}
-                type={"building"}
+                type={"floor"}
                 index={filteredSpot_floor.properties.id}
-                open={filteredSpot_building.metadata.open_floor}
+                open={filteredSpot_floor.metadata.open_floor}
                 toggleStudySpot={toggleStudySpot}
                 title={filteredSpot_floor.properties.floor}
                 body={

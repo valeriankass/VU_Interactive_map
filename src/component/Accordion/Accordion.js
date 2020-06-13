@@ -7,9 +7,12 @@ export default function Accordion(props) {
   return (
     <div
       className={"accordion__child " + (props.open ? 'open' : 'closed')}
-      onClick={() => props.toggleStudySpot(props.index, props.type)}
     >
-      <div className="accordion__title">
+      <div
+        className="accordion__title"
+        onClick={() => props.toggleStudySpot(props.index, props.type)}
+        onMouseDown={e => e.stopPropagation()}
+      >
         {props.title}
       </div>
 

@@ -1,12 +1,13 @@
 .accordion__child {
   margin: 15px;
-  padding: 15px;
   background-color: #FFF;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.accordion__child .accordion__title {
+.accordion__child > .accordion__title {
+  padding: 15px;
+  cursor: pointer;
   position: relative;
   font-size: 20px;
   padding-right: 80px;
@@ -18,7 +19,7 @@
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: 0px;
+	right: 2%;
 	transform: translateY(-50%);
 	width: 30px;
 	height: 30px;
@@ -32,6 +33,7 @@
 }
 
 .accordion__child > .accordion__body {
+  font-size: 16px;
   padding-left: 50px;
 
   opacity: 0;
@@ -40,8 +42,9 @@
   transition: all 0.4s ease-out;
 }
 
-.accordion__child.open > .accordion__title {
-  margin-bottom: 15px;
+.accordion__child.open > .accordion__body > .accordion__child {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .accordion__child.open > .accordion__title::after {
@@ -51,4 +54,8 @@
 .accordion__child.open > .accordion__body {
   max-height: 1000px;
   opacity: 1;
+}
+
+.accordionless_body {
+  padding-bottom: 20px;
 }
