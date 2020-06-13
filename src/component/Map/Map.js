@@ -98,7 +98,7 @@ export default function Map() {
                 <p className={selectedSpot.properties.availableSpots ? "availSpots" : "notAvail"}>
                   {selectedSpot.properties.availableSpots ? "Free spots are available!" : "No free spots at the moment."}
                 </p>
-                <p className={selectedSpot.properties.electricityPlugs ? "" : "notAvail"}>
+                <p className={selectedSpot.properties.electricityPlugs ? "availSpots" : "notAvail"}>
                   {selectedSpot.properties.electricityPlugs ? "Power sockets are available!" : "There are no power sockets here."}
                 </p>
               </div>
