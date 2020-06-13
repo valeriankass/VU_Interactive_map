@@ -15,6 +15,11 @@
   transition: all 0.4s ease;
 }
 
+.accordion__child > .accordion__title:hover {
+  background-color: rgba(211, 211, 211, 0.2);
+  box-shadow: 10px;
+}
+
 .accordion__child > .accordion__title::after {
 	content: '';
 	position: absolute;
@@ -47,15 +52,21 @@
   margin-bottom: 30px;
 }
 
+.accordion__child.open > .accordion__title {
+  border-bottom: 2px solid rgba(0, 255, 255, 0.4);
+}
+
 .accordion__child.open > .accordion__title::after {
   transform: translateY(-50%) rotate(90deg);
 }
 
 .accordion__child.open > .accordion__body {
+  padding-top: 20px;
   max-height: 1000px;
   opacity: 1;
 }
 
 .accordionless_body {
   padding-bottom: 20px;
+  padding-top: 0px;
 }

@@ -21,9 +21,10 @@ export default function AccordionHandler() {
     }))
   }
 
-  //Those consts are required to obtain unique buildings and floors
+  //Shortcut used b/c building is not nested
   const buildings = studySpots_State.map(spot => spot.properties.building);
-  const floors = studySpots_State.map(spot => spot.properties.floor);
+  //In case of Floors we have to remember that two buildings can have the same floor
+  //and both buildings should display their floor.
 
   return (
     <div className="accordion__container">
@@ -36,28 +37,41 @@ export default function AccordionHandler() {
           index={filteredSpot_building.properties.id}
           open={filteredSpot_building.metadata.open_building}
           toggleStudySpot={toggleStudySpot}
-          title={filteredSpot_building.properties.building}
+          title={"Building: " + filteredSpot_building.properties.building}
           body={
-            studySpots_State.filter((spot_floor, i) => (
-                spot_floor.properties.building === filteredSpot_building.properties.building &&
-              floors.indexOf(spot_floor.properties.floor) === i
-            )).map((filteredSpot_floor) => (
+            studySpots_State.filter(spot_floor => (
+              spot_floor.properties.building === filteredSpot_building.properties.building
+            ))//Returns array of spots at current building
+            .filter((item, index) => (
+              studySpots_State.filter(spot_floor => (
+                spot_floor.properties.building === filteredSpot_building.properties.building
+              ))//Returns array of spots at current building
+              //Transforms spot object to floor string
+              .map(item => item.properties.floor)
+              //Uses array of floor strings as basis
+              //Finds first element of floor string value
+              //Checks whether the parent (of floor string) spot has been seen before
+              //Effect: Eliminates duplicates
+              .indexOf(item.properties.floor) === index
+            ))
+            .map((filteredSpot_floor) => (
               <Accordion //Floor
                 key={filteredSpot_floor.properties.id}
                 type={"floor"}
                 index={filteredSpot_floor.properties.id}
                 open={filteredSpot_floor.metadata.open_floor}
                 toggleStudySpot={toggleStudySpot}
-                title={filteredSpot_floor.properties.floor}
+                title={"Floor: " + filteredSpot_floor.properties.floor}
                 body={
                   studySpots_State.filter((spot_room) => (
-                    spot_room.properties.floor === filteredSpot_floor.properties.floor
+                    spot_room.properties.floor === filteredSpot_floor.properties.floor &&
+                    spot_room.properties.building === filteredSpot_floor.properties.building
                   )).map((filteredSpot_room) => (
                     <div
                       className="accordionless_body"
                       key={filteredSpot_room.properties.id}
                     >
-                      {filteredSpot_room.properties.room}
+                      {"Room: " + filteredSpot_room.properties.room}
                     </div>
                   ))
                 }
@@ -69,3 +83,5 @@ export default function AccordionHandler() {
     </div>
   );
 }
+
+//todo: automatic sorting of floors
