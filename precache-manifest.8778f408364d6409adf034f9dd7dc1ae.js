@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0424a1a2ebb94ba5691158fc4327028",
+    "revision": "2ac94b0c8c4269a33efa316e0602a825",
     "url": "/VU_Interactive_map/index.html"
   },
   {
-    "revision": "1e8acae2fe201ca0050c",
+    "revision": "a8634a2977dfd1e8b2cd",
     "url": "/VU_Interactive_map/static/css/main.b27165c0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/VU_Interactive_map/static/js/2.260003ac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1e8acae2fe201ca0050c",
-    "url": "/VU_Interactive_map/static/js/main.18796654.chunk.js"
+    "revision": "a8634a2977dfd1e8b2cd",
+    "url": "/VU_Interactive_map/static/js/main.6467d908.chunk.js"
   },
   {
     "revision": "670636fce2a5516965e0",
