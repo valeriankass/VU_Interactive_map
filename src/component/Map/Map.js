@@ -85,7 +85,9 @@ export default function Map() {
                 setSelectedSpot(null);
               }}
             >
-              <div>
+              <div
+                id="InfoWindow"
+              >
                 <p className="loc">
                   Room: {selectedSpot.properties.room}
                 </p>
