@@ -11,7 +11,6 @@ Npm in essential to the way we run our app. Npm is part of Node.js. Download it 
 ## Run the app in development mode
 
 Before running the server locally, you need to:
-- create .env.local file in the root folder and set your REACT_APP_GOOGLE_MAPS_API_KEY value.
 - install dependencies
 ```bash
 npm install
